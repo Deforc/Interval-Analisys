@@ -1,0 +1,12 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Постановка задачи}{2}{section.1}%
+\contentsline {section}{\numberline {2}Теория}{2}{section.2}%
+\contentsline {section}{\numberline {3}Реализация}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Описание алгоритма}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Ссылка на репозиторий}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Результат}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Результаты вычислений параметра регуляризации}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Итоговые результаты}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Точечная матрица \( A' \)}{4}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Обсуждение}{5}{section.5}%
+\contentsline {section}{\numberline {6}Выводы}{5}{section.6}%
