@@ -1,0 +1,15 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Постановка задачи}{2}{section.1}%
+\contentsline {section}{\numberline {2}Теория}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Допусковое множество}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Функционал}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}\( b \)-коррекция ИСЛАУ}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}\( A \)-коррекция ИСЛАУ}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}\( Ab \)-коррекция ИСЛАУ}{3}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Реализаця}{3}{section.3}%
+\contentsline {section}{\numberline {4}Результаты}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Максимум распознающего функционала}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Достижение разрешимости за счёт коррекции левой части (A-коррекция)}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Достижение разрешимости за счёт коррекции правой части (b-коррекция)}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Достижение разрешимости за счёт Ab-коррекции}{7}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Выводы}{8}{section.5}%
