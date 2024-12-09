@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1733771169.75457 "c:/interval_analisys/lab3/main.tex" "main.pdf" "main" 1733771171.98772 0
+["pdflatex"] 1733771560.52562 "c:/interval_analisys/lab3/main.tex" "main.pdf" "main" 1733771562.70812 0
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1714939872 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1714939873 3308 eee81981029f67083258db36df06e523 ""
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1714594941 3304 6a543c07045572737981351171e0505e ""
@@ -10,7 +10,7 @@
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1714592658 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1714939880 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "c:/Users/79823/.texlive2024/texmf-var/fonts/tfm/lh/lh-t2a/latt1000.tfm" 1729096530 1272 55f67101730a20777decd892fb4b4e3e ""
-  "c:/interval_analisys/lab3/main.tex" 1733771168 12915 162c0b131d977a4eaddb9e46ef13d02d ""
+  "c:/interval_analisys/lab3/main.tex" 1733771557 12973 56076594a0130253a3979d22aade2ed0 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1714561703 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1714561703 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1714562427 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -180,10 +180,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714565507 5519690 1698f96789543a09b6b0e33aada59581 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1714565817 8225118 f2b139b750f0252b2c96a00ae7939701 ""
   "c:/texlive/2024/texmf.cnf" 1714565482 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1733771171 1895 d240bb7d7f00ab53722e252b5fc3903c "pdflatex"
-  "main.out" 1733771171 1749 95fa5d74452a9899716cd87ca912de62 "pdflatex"
-  "main.tex" 1733771168 12915 162c0b131d977a4eaddb9e46ef13d02d ""
-  "main.toc" 1733771171 945 02fd3c664fa42130bd8cc1725159ddc5 "pdflatex"
+  "main.aux" 1733771562 1895 4765c8f861f60e66cd631d9bb6c926d3 "pdflatex"
+  "main.out" 1733771562 1749 95fa5d74452a9899716cd87ca912de62 "pdflatex"
+  "main.tex" 1733771557 12973 56076594a0130253a3979d22aade2ed0 ""
+  "main.toc" 1733771562 945 02fd3c664fa42130bd8cc1725159ddc5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
