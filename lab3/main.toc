@@ -7,5 +7,7 @@
 \contentsline {subsection}{\numberline {2.4}Коэффициент Жаккара}{3}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Реализаця}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Алгоритм}{3}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Результаты}{4}{section.4}%
-\contentsline {section}{\numberline {5}Выводы}{4}{section.5}%
+\contentsline {section}{\numberline {4}Анализ и обработка данных}{4}{section.4}%
+\contentsline {section}{\numberline {5}Нахождение констант}{8}{section.5}%
+\contentsline {section}{\numberline {6}Результаты}{9}{section.6}%
+\contentsline {section}{\numberline {7}Выводы}{13}{section.7}%

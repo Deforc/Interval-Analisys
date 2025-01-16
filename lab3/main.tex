@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english, russian]{babel}
 \usepackage{graphicx}
-\graphicspath{ {./graphics/} }
+\graphicspath{ {./images/} }
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \pagestyle{empty} %
 \usepackage[pageanchor]{hyperref}
@@ -226,33 +226,175 @@
   \subsection{Алгоритм}
 
   Для поиска параметров, при которых функционал достигал наибольших
-  значений, был использован алгоритм троичного поиска с заданной точностью
+  значений, был использован алгоритм тернарного поиска с заданной точностью
   \( \varepsilon = 10^{-3} \) на участках, где функции вели
   себя как унимодальные.
 
   Его же будем использовать для рассчёта интервальной оценки параметров \( a, t\) с уровнем значимости \( \alpha = 0.05 \)
 
+  \section{Анализ и обработка данных}
+  
+  Данные представляют собой 100 фреймов на 8 каналах по 1024 пикселя.
+
+  Рассмотрим распределение данных фрейма в выборках \(\mathbf{X}\) и \(\mathbf{Y}\) для 1 канала и 1 пикселя
+  \begin{figure}[htbp!]
+      \begin{center}
+          \includegraphics[width = 0.6\textwidth]{x_hist_0_0}
+          \caption{Гистограмма распределения 1 пикселя и 1 канала в выборке X}
+  \label{figure:hist_0_0}
+      \end{center}
+  \end{figure}
+
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.59\textwidth]{y_hist_0_0}
+        \caption{Гистограмма распределения 1 пикселя и 1 канала в выборке Y}
+\label{figure:hist_0_0}
+    \end{center}
+\end{figure}
+
+
+
+ 
+\newpage
+  Рассмотирм графики рассеяния в выборках \(\mathbf{X}\) и \(\mathbf{Y}\)
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{x_scatter}
+        \caption{График рассеяния данных в выборке X}
+  \label{figure:x_scatter}
+    \end{center}
+  \end{figure}
+
+  \begin{figure}[htbp!]
+  \begin{center}
+      \includegraphics[width = 0.59\textwidth]{y_scatter}
+      \caption{График рассеяния данных в выборке Y}
+  \label{figure:y_scatter}
+  \end{center}
+  \end{figure}
+
+  Очевидно, для данных требуется усреднение, чтобы уменьшить вариативность данных.
+
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.75\textwidth]{x_scatter_middle}
+        \caption{Усредненные данные в выборке X}
+  \label{figure:x_scatter_middle}
+    \end{center}
+  \end{figure}
+
+  \begin{figure}[htbp!]
+  \begin{center}
+      \includegraphics[width = 0.75\textwidth]{y_scatter_middle}
+      \caption{Усредненные данные в выборке Y}
+  \label{figure:y_scatter_middle}
+  \end{center}
+  \end{figure}
+
+
+  \newpage
+
+  Теперь наблюдается распределение данных по 8 имеющимся каналам.
+
+  Рассмотрим расположение данных в 1-ом канале:
+
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{first_channel}
+        \caption{Необработанные данные Y(X)}
+    \label{figure:first_channel}
+    \end{center}
+    \end{figure}
+
+  Удалим выбросы данных, используя правило трёх сигм.
+
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{first_channel_fixed}
+        \caption{Обработанные данные Y(X)}
+    \label{figure:first_channel_fixed}
+    \end{center}
+    \end{figure}
+
+    \newpage
+  
+  \section{Нахождение констант}
+  
+  Константы будем находить при помощи тернарного поиска, поскольку (как будет видно далее из графиков) функция зависимости функционала от параметра на рассматриваемом участке ведёт себя как унимодальная, а значит, у неё есть единственный максимум / минимум.
+  Интервалы для поиска возьмём сознательно больше значений крайних левых и правых точек.
+  \newpage
   \section{Результаты}
 
   Для функцинала со стнадартными интервальными выборками (\ref{eq:F_1}):
 
-  \[ \hat a = 0.34278 \pm 0.0005, \ F_1 (\hat a) = -0.94918, \]
-  \[ \hat t = -1.01467 \pm 0.0005, \ F_1 (\hat t) = -0.92734. \]
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{a_simple}
+        \caption{Зависимость функционала от параметра а}
+  \label{figure:a_simple}
+    \end{center}
+  \end{figure}
 
+  \begin{figure}[htbp!]
+  \begin{center}
+      \includegraphics[width = 0.6\textwidth]{t_simple}
+      \caption{Зависимость функционала от параметра t}
+  \label{figure:t_simple}
+  \end{center}
+  \end{figure}
+
+  \[ \hat a = 0.34600 \pm 0.0005, \ F_1 (\hat a) = -0.94918, \]
+  \[ \hat t = -1.05068 \pm 0.0005, \ F_1 (\hat t) = -0.92734. \]
+
+  \newpage
   Для функцинала с интервальными модами (\ref{eq:F_2}):
 
-  \[ \hat a = 0.34023 \pm 0.0005, \ F_2 (\hat a) = -0.25437, \]
-  \[ \hat t = -0.99871 \pm 0.0005, \ F_2 (\hat t) = -0.92750. \]
-
+  \[ \hat a = 0.34811 \pm 0.0005, \ F_2 (\hat a) = -0.25437, \]
+  \[ \hat t = -1.04832 \pm 0.0005, \ F_2 (\hat t) = -0.92750. \]
+  \newpage
   Для функцинала с интервальными медианами Крейновича (\ref{eq:F_3}):
 
-  \[ \hat a = 0.34415 \pm 0.0005, \ F_3 (\hat a) = -0.00184, \]
-  \[ \hat t = -1.00607 \pm 0.0005, \ F_3 (\hat t) = 0.63020. \]
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{a_med_k}
+        \caption{Зависимость функционала от параметра а}
+  \label{figure:a_med_k}
+    \end{center}
+  \end{figure}
 
+  \begin{figure}[htbp!]
+  \begin{center}
+      \includegraphics[width = 0.6\textwidth]{t_med_k}
+      \caption{Зависимость функционала от параметра t}
+  \label{figure:t_med_k}
+  \end{center}
+  \end{figure}
+
+  \[ \hat a = 0.34589 \pm 0.0005, \ F_3 (\hat a) = -0.00184, \]
+  \[ \hat t = -1.04527 \pm 0.0005, \ F_3 (\hat t) = 0.63020. \]
+  \newpage
   Для функцинала с интервальными медианами Пролубникова (\ref{eq:F_4}):
 
-  \[ \hat a = 0.34366 \pm 0.0005, \ F_4 (\hat a) = -0.12457, \]
-  \[ \hat t = -1.00607 \pm 0.0005, \ F_4 (\hat t) = 0.63021. \]
+  \begin{figure}[htbp!]
+    \begin{center}
+        \includegraphics[width = 0.6\textwidth]{a_med_p}
+        \caption{Зависимость функционала от параметра а}
+  \label{figure:a_med_p}
+    \end{center}
+  \end{figure}
+
+  \begin{figure}[htbp!]
+  \begin{center}
+      \includegraphics[width = 0.6\textwidth]{t_med_p}
+      \caption{Зависимость функционала от параметра t}
+  \label{figure:t_med_p}
+  \end{center}
+  \end{figure}
+
+  \[ \hat a = 0.34589 \pm 0.0005, \ F_4 (\hat a) = -0.12457, \]
+  \[ \hat t = -1.04527 \pm 0.0005, \ F_4 (\hat t) = 0.63021. \]
+  \newpage
   \section{Выводы}
 
   В процессе выполнения лабораторной работы были рассмотрены подходы к оценке параметров в уравнениях, содержащих интервальные данные. На основе использования различных функционалов, включая коэффициент Жаккара, были определены оптимальные значения параметров \( \hat{a} \) и \( \hat{t} \) для уравнений вида \( \mathbf{X} + a = \mathbf{Y} \) и \( t\mathbf{X} = \mathbf{Y} \).
